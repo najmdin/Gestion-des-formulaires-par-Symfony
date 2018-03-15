@@ -1,0 +1,20 @@
+
+
+{% block body %}
+
+<h1 id="text-head">Détails du user </h1>
+
+<article>
+<header>
+<h4 style="color:green;">{{ user.Ville }}</h4>
+</header>
+<div>
+<p id="text-head">{{ user.Destination }}</p>
+<p id="text-head">{{ user.MoisDepart }}</p>
+<p id="text-head">{{ user.Nbrjours }}</p>
+<p id="text-head">{{ user.TypeVoyage }}</p>
+<p id="text-head">{{ user.Transport }}</p>
+<p id="text-head">{{ user.budget }}</p>
+</div>
+</article>
+{% endblock %}

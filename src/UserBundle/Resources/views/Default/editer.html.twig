@@ -1,0 +1,12 @@
+
+
+{% block body %}
+
+<h1 id="text-head">Editer un user </h1>
+
+<form action="{{ path("user_editer",{id:id})}}" method="post">
+{{ form_widget(form)}}
+<input type="submit">
+</form>
+
+{% endblock %}

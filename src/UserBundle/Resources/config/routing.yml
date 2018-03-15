@@ -1,0 +1,32 @@
+user_homepage:
+    path:     /
+    defaults: { _controller: UserBundle:Default:index }
+
+user_ajouter:
+    path:     /ajouter
+    defaults: { _controller: UserBundle:Default:ajouter }
+
+user_afficher:
+    path:     /afficher
+    defaults: { _controller: UserBundle:Default:afficher }
+
+user_voir:
+    path:     /{id}/voir
+    defaults: { _controller: UserBundle:Default:voir }
+    requirements: 
+         id: \d+
+
+user_editer:
+    path:     /{id}/editer
+    defaults: { _controller: UserBundle:Default:editer }
+    requirements: 
+         id: \d+
+
+user_rechercher:
+    path:     /rechercher
+    defaults: { _controller: UserBundle:Default:rechercher }
+
+user_details:
+   path:     /voyage_details
+#   defaults: { _controller: VoyageBundle:Default:rechercher }
+

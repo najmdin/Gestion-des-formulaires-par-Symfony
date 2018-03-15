@@ -1,0 +1,16 @@
+ajouter :{% extends "::base.html.twing" %}
+default : /*$v = new Voyage_Details();
+    	$v->setVille("Marrakech");
+    	$v->setDestination("Paris");
+    	$v->setNbrJours(15);
+    	$v->setMoisDepart(10);
+    	$v->setTypeVoyage("trip");
+    	$v->setTransport("avion");
+    	$v->setBudget(1500);
+        $v->setDate(new \DateTime());
+
+    	$em->persist($v);
+        $em->flush();*/
+
+/*<form action="{{ path("voyage_rechercher")}}" method="post">
+{{ form_widget(form)}}*/

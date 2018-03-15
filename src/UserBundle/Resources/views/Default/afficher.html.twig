@@ -1,0 +1,22 @@
+
+
+{% block body %}
+
+<h1>Tous les users </h1>
+
+{% for user in users %}
+<article>
+<header>
+<h4 id="text-head" style="color:green;"><a href="{{path("user_voir",{id: user.id}) }}" titre="Voir {{ user.Ville }}">{{ user.Ville }}</a></h4>
+</header>
+<div>
+<p id="text-head">{{ user.Destination }}</p>
+<p id="text-head">{{ user.MoisDepart }}</p>
+<p id="text-head">{{ user.Nbrjours }}</p>
+<p id="text-head">{{ user.TypeVoyage }}</p>
+<p id="text-head">{{ user.Transport }}</p>
+<p id="text-head">{{ user.budget }}</p>
+</div>
+</article>
+{% endfor%}
+{% endblock %}
